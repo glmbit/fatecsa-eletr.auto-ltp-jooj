@@ -10,21 +10,21 @@ cont=0;
         resto=quociente % 2;
         quociente=quociente / 2;
         switch(cont){
-            case 0 : s0-resto; break; 
-            case 1 : s1-resto; break;
-            case 2 : s2-resto; break;
-            case 3 : s3-resto; break;
-            case 4 : s4-resto; break;
-            case 5 : s5-resto; break;
-            case 6 : s6-resto; break;
-            case 7 : s7-resto; break;
-            case 8 : s8-resto; break;
-            case 9 : s9-resto; break;
+            case 0 : s0=resto; break; 
+            case 1 : s1=resto; break;
+            case 2 : s2=resto; break;
+            case 3 : s3=resto; break;
+            case 4 : s4=resto; break;
+            case 5 : s5=resto; break;
+            case 6 : s6=resto; break;
+            case 7 : s7=resto; break;
+            case 8 : s8=resto; break;
+            case 9 : s9=resto; break;
         }
         cont++;
         }
         printf("Bin: %i", quociente);
-        for(tmp=cont-1; tmp >=0; tmp++){
+        for(tmp=cont-1; tmp >=0; tmp--){
             switch(tmp){
             case 0 : printf("%i", s0); break; 
             case 1 : printf("%i", s1); break;
@@ -38,6 +38,6 @@ cont=0;
             case 9 : printf("%i", s9); break;
             }
         }
-    }
+    
     return 0;
 }
